@@ -4,15 +4,16 @@ Create an interface, which allows the user to tag full images or parts of an ima
 
 ## Scenario:
 1. User is presented with a list (or grid) view of tagged images (get a list of images on [https://unsplash.com/search/photos/market](https://unsplash.com/search/photos/market)), as well as an input field, which provides filtering by tag.
-2. User selects an image from the list and is presented with a tagging interface which must include the image itself, as well as a hierarchical tag list with two levels.
-3. User can tag the whole image area by clicking on a tag in the list.
-4. User can tag a rectangular part of the image by dragging a tag from the list and dropping it on the image. The tagged area should be centered around the coordinates where the tag was dropped, but not extend beyond the bounds of the image.
-5. User can resize the tagged area after tagging an image.
-6. User can add multiple tags to an image
-7. Tags can be removed by clicking on an active tag in the list. User must be able to undo this operation and get an already removed tag back.
-8. Tags can be rearranged within the bounds of an image.
-9. After saving, user is taken back to the list/grid view which is updated with the new data and can filter images by tag using the input field
-
+2. User selects an image from the list and is presented with a  interface which must include the image itself, as well as a hierarchical tag list with two levels.
+3. Use can add/edit a caption to the image.
+4. User can tag the whole image area by clicking on a tag in the list.
+5. User can tag a rectangular part of the image by dragging a tag from the list and dropping it on the image. The tagged area should be centered around the coordinates where the tag was dropped, but not extend beyond the bounds of the image.
+6. User can resize the tagged area after tagging an image.
+7. User can add multiple tags to an image
+8. Tags can be removed by clicking on an active tag in the list. User must be able to undo this operation and get an already removed tag back.
+9. Tags can be rearranged within the bounds of an image.
+10. After saving, user is taken back to the list/grid view which is updated with the new data and can filter images by tag using the input field
+tagging
 ## Things to keep in mind:
 - Images can be scaled down after tagging. Tag coordinates should remain valid.
 - Activating a second-level tag (e.g. People/Customer) should imply that the top-level tag (People) is active as well.
